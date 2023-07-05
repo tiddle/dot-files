@@ -22,6 +22,7 @@ in
         wget
         curl
         firefox
+        ripgrep
     ];
     programs.zsh = {
         enable = true;
@@ -49,10 +50,6 @@ in
             set number
             set cursorline
 
-            inoremap <silent><expr> <TAB>
-                  \ coc#pum#visible() ? coc#pum#next(1) :
-                  \ CheckBackspace() ? "\<Tab>" :
-                  \ coc#refresh()
             inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
             inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                                           \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -62,6 +59,7 @@ in
             vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
             vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+
         '';
 	plugins = with pkgs.vimPlugins; [
 	    vim-nix
