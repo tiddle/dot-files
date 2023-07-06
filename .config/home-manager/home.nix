@@ -23,6 +23,7 @@ in
         curl
         firefox
         ripgrep
+        neofetch
     ];
     programs.zsh = {
         enable = true;
@@ -31,7 +32,7 @@ in
             vim = "nvim";
             update = "sudo nixos-rebuild switch";
             update-nixos = "sudo nixos-rebuild switch";
-            update-home = "home-manager switch";
+            update-home = "home-manager switch -b backup && mv -f ~/.config/nvim/init.lua.backup ~/.config/nvim/init.lua";
             edit-nixos = "sudo vim /etc/nixos/configuration.nix";
             edit-home = "vim ~/.config/home-manager/home.nix";
             wd="cd ~/Documents/workspace";
@@ -42,14 +43,15 @@ in
             theme = "bira";
         };
     };
-    programs.neovim = {
+    programs.zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+    programs.neovim = {      
         enable = true;
         withNodeJs = true;
         vimAlias = true;
         extraConfig = ''
-            set number
-            set cursorline
-
             inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
             inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                                           \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -187,7 +189,8 @@ in
                 padding.x = 8;
                 padding.y = 8;
                 opacity = 1;
-            };
+                startup_mode = "Fullscreen";
+            };            
             font = {
                 family = "DroidSansM Nerd Font";
             };
