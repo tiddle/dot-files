@@ -103,6 +103,9 @@ in
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    llvmPackages_rocm.clang
+    libgccjit
+    zig
   ];
 
 

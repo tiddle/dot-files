@@ -54,13 +54,6 @@ in
             inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                                           \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
         '';
-        extraLuaConfig = ''
-            local builtin = require('telescope.builtin')
-            vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-            vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-            vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-
-        '';
 	plugins = with pkgs.vimPlugins; [
 	    vim-nix
             telescope-nvim
@@ -72,6 +65,7 @@ in
             coc-prettier
             autosave-nvim
             nvchad
+            autoclose-nvim
 	];
         coc = {
           enable = true;
