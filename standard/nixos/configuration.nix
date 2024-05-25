@@ -8,6 +8,9 @@
   pkgs,
   ...
 }: {
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
+
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
