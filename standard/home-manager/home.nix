@@ -47,7 +47,6 @@
     thefuck
     nerdfonts
     nodejs_20
-    vlc
     insomnia
     wget
     curl
