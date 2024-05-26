@@ -34,7 +34,7 @@
   };
 
   home.username = "${username}";
-  home.homeDirectory = "${homeDirectory}"
+  home.homeDirectory = "${homeDirectory}";
   home.shellAliases = {
     reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
   };
