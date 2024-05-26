@@ -27,7 +27,7 @@
       homeDirectory = "/${homeDirPrefix}/${username}";
 
       home = (import ./home.nix {
-        inherit homeDirectory pkgs stateVersion system username;
+        inherit homeDirectory pkgs stateVersion system username outputs;
       });
     in {
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
