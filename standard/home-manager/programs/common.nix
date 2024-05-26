@@ -17,10 +17,9 @@
     neofetch
   ];
 
-  bottom.enable = true;
-  eza.enable = true;
-
   programs = {
+    bottom.enable = true;
+    eza.enable = true;
     home-manager = {
       enable = true;
     };
