@@ -113,7 +113,7 @@
     };
   };
 
-  services.xserver.xkbOptions = "ctrl:swapcaps";
+  services.xserver.xkbOptions = "caps:ctrl_modifier";
   console.useXkbConfig = true;
 
   users.defaultUserShell = pkgs.zsh;
