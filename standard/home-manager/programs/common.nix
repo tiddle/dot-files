@@ -35,6 +35,7 @@
     zsh = {
       enable = true;
       shellAliases = {
+          ls = "eza";
           ll = "ls -l";
           wd = "cd ~/Documents/workspace";
           resethome = "home-manager switch --flake .#carlo@carlo-pc";
