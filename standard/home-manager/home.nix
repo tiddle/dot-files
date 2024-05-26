@@ -22,12 +22,6 @@
     # ./nvim.nix
   ];
 
-  home = {
-    shellAliases = {
-      reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
-    };
-  };
-
   nixpkgs = {
     config = {
       inherit system;
