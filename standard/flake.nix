@@ -64,7 +64,7 @@
 
     # Standalone home-manager configuration entrypoint
     homeConfigurations = {
-      "carlos@carlo-pc" = home-manager.lib.homeManagerConfiguration {
+      "carlo@carlo-pc" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [

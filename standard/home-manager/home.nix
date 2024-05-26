@@ -48,13 +48,12 @@
     config = {
       # Disable if you don't want unfree packages
       allowUnfree = true;
+      experimental-features = "nix-command flakes";
     };
   };
 
-  # TODO: Set your username
-  home = {
-    username = "carlo";
-    homeDirectory = "/home/carlo";
+  home.shellAliases = {
+    reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
   };
 
   # Add stuff for your user as you see fit:
