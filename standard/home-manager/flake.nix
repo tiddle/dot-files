@@ -26,7 +26,7 @@
       homeDirPrefix = if pkgs.stdenv.hostPlatform.isDarwin then "/Users" else "/home";
       homeDirectory = "/${homeDirPrefix}/${username}";
 
-      home = (import ./home.nix {
+      home = (import ./home-config.nix {
         inherit homeDirectory pkgs stateVersion system username;
       });
     in {

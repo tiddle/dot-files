@@ -24,11 +24,19 @@
     # ./nvim.nix
   ];
 
+  home = {
+    inherit homeDirectory packages stateVersion username;
+
+    shellAliases = {
+      reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
+    };
+  };
+
   nixpkgs = {
-    # Configure your nixpkgs instance
     config = {
-      # Disable if you don't want unfree packages
+      inherit system;
       allowUnfree = true;
+      allowUnsupportedSystem = true;
       experimental-features = "nix-command flakes";
     };
   };
@@ -51,15 +59,8 @@
     ripgrep
     neofetch
   ];
-  programs.zoxide = {
-    enable = true;
-    enableZshIntegration = true;
-  };
-  programs.git = {
-    enable = true;
-    userName = "Carlo Cruz";
-    userEmail = "me@carlocruz.com";
-  };
+
+  programs = import ./programs.nix;
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
