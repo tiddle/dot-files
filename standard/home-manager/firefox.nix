@@ -1,5 +1,7 @@
 {
   pkgs,
+  config,
+  lib,
   ...
 }:  {
 
@@ -7,10 +9,11 @@
     enable = true;
     profiles.default = {
       isDefault = true;
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      extensions = lib.mkIf config.programs.firefox.enable
+      (with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         bitwarden
-      ];
+      ]);
       settings = {
         "beacon.enabled" = false;
         "browser.contentblocking.category" = "strict";
