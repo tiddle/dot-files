@@ -46,11 +46,8 @@
     htop
     thefuck
     nerdfonts
-    nodejs_20
-    insomnia
     wget
     curl
-    firefox
     ripgrep
     neofetch
   ];

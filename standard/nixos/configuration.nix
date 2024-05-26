@@ -45,7 +45,7 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
-    ../desktop-environment/plasma5.nix
+    ../desktop-environment/pantheon.nix
     ./hardware-configuration.nix
   ];
 
