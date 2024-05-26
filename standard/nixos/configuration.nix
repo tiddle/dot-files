@@ -45,6 +45,7 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
+    ../desktop-environment/budgie.nix
     ./hardware-configuration.nix
   ];
 
