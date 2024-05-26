@@ -96,10 +96,11 @@
   environment.systemPackages = with pkgs; [
     vim
     zig
+    zsh
     git
   ];
 
-  environment.shells = with pkgs; [ zsh ];
+  programs.zsh.enable = true;
 
   # TODO: Set your hostname
   networking.hostName = "carlo-pc";
