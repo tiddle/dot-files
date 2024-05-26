@@ -2,8 +2,6 @@
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   pkgs,
-  homeDirectory,
-  username,
   ...
 }: {
   home.sessionVariables = {
@@ -41,8 +39,8 @@
     };
   };
 
-  home.username = "${username}";
-  home.homeDirectory = "${homeDirectory}";
+  home.username = "carlo";
+  home.homeDirectory = "/home/carlo";
   home.shellAliases = {
     reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
   };
@@ -69,5 +67,5 @@
   systemd.user.startServices = "sd-switch";
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.11";
+  home.stateVersion = "23.05";
 }
