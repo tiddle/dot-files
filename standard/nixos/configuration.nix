@@ -45,7 +45,7 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
-    ../desktop-environment/budgie.nix
+    ../desktop-environment/plasma5.nix
     ./hardware-configuration.nix
   ];
 
@@ -93,8 +93,11 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
-  # FIXME: Add the rest of your current configuration
-
+  environment.systemPackages = with pkgs; [
+    vim
+    zig
+    git
+  ];
   # TODO: Set your hostname
   networking.hostName = "carlo-pc";
 
@@ -102,7 +105,7 @@
   users.users = {
     carlo = {
       isNormalUser = true;
-      extraGroups = ["wheel"];
+      extraGroups = ["wheel" "networkmanager"];
     };
   };
 
