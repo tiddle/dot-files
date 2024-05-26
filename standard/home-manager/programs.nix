@@ -41,7 +41,7 @@
         "browser.contentblocking.category" = "strict";
         "browser.display.background_color" = "#c5c8c6";
         "browser.display.foreground_color" = "#1d1f21";
-        "browser.download.dir" = "${config.home.homeDirectory}/download";
+        "browser.download.dir" = "/home/carlo/Download";
         "browser.safebrowsing.appRepURL" = "";
         "browser.safebrowsing.malware.enabled" = false;
         "browser.search.hiddenOneOffs" = "Google,Yahoo,Bing,Amazon.com,Twitter";
