@@ -3,7 +3,6 @@
 {
   pkgs,
   system,
-  config,
   ...
 }: {
   home.sessionVariables = {
