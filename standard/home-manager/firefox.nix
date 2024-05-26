@@ -9,11 +9,11 @@
     enable = true;
     profiles.default = {
       isDefault = true;
-      extensions = lib.mkIf config.programs.firefox.enable
-      (with pkgs.nur.repos.rycee.firefox-addons; [
-        ublock-origin
-        bitwarden
-      ]);
+      # extensions = lib.mkIf config.programs.firefox.enable
+      # (with pkgs.nur.repos.rycee.firefox-addons; [
+      #   ublock-origin
+      #   bitwarden
+      # ]);
       settings = {
         "beacon.enabled" = false;
         "browser.contentblocking.category" = "strict";
