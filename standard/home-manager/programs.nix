@@ -16,6 +16,9 @@
     shellAliases = {
         ll = "ls -l";
         wd = "cd ~/Documents/workspace";
+        resethome = "home-manager switch --flake .#carlo@carlo-pc";
+        resetnix = "sudo nixos-rebuild switch --flake .#carlo";
+        addhome = "nix shell nixpkgs#home-manager";
     };
     oh-my-zsh = {
         enable = true;
