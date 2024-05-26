@@ -11,31 +11,4 @@
     userName = "Carlo Cruz";
     userEmail = "me@carlocruz.com";
   };
-  htop = {
-    enable = true;
-  };
-  thefuck = {
-    enable = true;
-  };
-
-  nerdfonts = {
-    enable = true;
-  };
-
-  wget = {
-    enable = true;
-  };
-
-  curl = {
-    enable = true;
-  };
-
-  ripgrep = {
-    enable = true;
-  };
-
-  neofetch = {
-    enable = true;
-  };
-
 }
