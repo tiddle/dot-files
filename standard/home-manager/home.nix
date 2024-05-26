@@ -45,6 +45,7 @@
     htop
     thefuck
     nerdfonts
+    nodejs_lts
     wget
     curl
     ripgrep

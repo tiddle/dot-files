@@ -95,7 +95,6 @@ in
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
           ublock-origin
           bitwarden
-          reddit-enhancement-suite
         ];
         settings = {
           "beacon.enabled" = false;

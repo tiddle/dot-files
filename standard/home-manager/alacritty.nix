@@ -7,7 +7,6 @@
           padding.x = 8;
           padding.y = 8;
           opacity = 1;
-          startup_mode = "Fullscreen";
       };            
       font = {
           family = "DroidSansM Nerd Font";
