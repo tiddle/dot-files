@@ -113,6 +113,9 @@
     };
   };
 
+  services.xserver.xkbOptions = "ctrl:swapcaps";
+  console.useXkbConfig = true;
+
   users.defaultUserShell = pkgs.zsh;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
