@@ -67,7 +67,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.carlo = import ./home;
+            home-manager.users.carlo = import ./home-manager;
           }
         ];
       };
