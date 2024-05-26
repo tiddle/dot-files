@@ -2,6 +2,8 @@
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   pkgs,
+  homeDirectory,
+  username,
   ...
 }: {
   home.sessionVariables = {
@@ -31,6 +33,8 @@
     };
   };
 
+  home.username = "${username}";
+  home.homeDirectory = "${homeDirectory}"
   home.shellAliases = {
     reload-home-manager-config = "home-manager switch --flake ${builtins.toString ./.}";
   };
