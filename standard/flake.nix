@@ -12,6 +12,8 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    nurpkgs.url = "github:nix-community/NUR";
   };
 
   outputs = {
