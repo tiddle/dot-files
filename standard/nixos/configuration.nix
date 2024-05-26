@@ -98,6 +98,9 @@
     zig
     git
   ];
+
+  environment.shells = with pkgs; [ zsh ];
+
   # TODO: Set your hostname
   networking.hostName = "carlo-pc";
 
