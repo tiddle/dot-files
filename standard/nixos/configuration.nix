@@ -7,13 +7,7 @@
   config,
   pkgs,
   ...
-}: 
-let
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-  };
-in
-  {
+}: {
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
 
@@ -99,7 +93,7 @@ in
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs.unstable; [
     vim
     zig
     zsh
