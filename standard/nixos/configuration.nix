@@ -8,6 +8,9 @@
   pkgs,
   ...
 }: {
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  };
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
 
