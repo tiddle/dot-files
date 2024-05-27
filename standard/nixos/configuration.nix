@@ -45,7 +45,7 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
-    ../desktop-environment/xfce.nix
+    ../desktop-environment/plasma6.nix
     ./hardware-configuration.nix
   ];
 
