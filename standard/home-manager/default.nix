@@ -7,7 +7,7 @@
 }: {
   home.sessionVariables = {
     EDITOR = "vim";
-    BROWSER = "firefox";
+    BROWSER = "librewolf";
     TERMINAL = "alacritty";
   };
   # You can import other home-manager modules here

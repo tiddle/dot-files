@@ -45,7 +45,7 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
-    ../desktop-environment/pantheon.nix
+    ../desktop-environment/plasma6.nix
     ./hardware-configuration.nix
   ];
 
@@ -98,6 +98,7 @@
     zig
     zsh
     git
+    orca-slicer
   ];
 
   programs.zsh.enable = true;
