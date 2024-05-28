@@ -9,7 +9,6 @@
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
     thefuck
-    nodePackages_latest.nodejs
     wget
     curl
     ripgrep

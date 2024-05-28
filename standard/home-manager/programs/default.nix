@@ -4,6 +4,6 @@
     ./firefox.nix
     ./librewolf.nix
     ./alacritty.nix
-    ./vscodium.nix
+    #./vscodium.nix
   ];
 }
