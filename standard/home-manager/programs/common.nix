@@ -16,6 +16,7 @@
     ripgrep
     neofetch
     bitwarden
+    thunderbird
   ];
 
   programs = {
