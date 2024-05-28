@@ -5,11 +5,16 @@
   system,
   ...
 }: {
+  options = {
+    largePrograms.enable = lib.mkEnableOption "enables largePrograms";
+  };
+
   home.sessionVariables = {
     EDITOR = "vim";
     BROWSER = "librewolf";
     TERMINAL = "alacritty";
   };
+
   # You can import other home-manager modules here
   imports = [
     ./programs

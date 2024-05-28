@@ -1,7 +1,7 @@
 {
   lib,
   pkgs,
-  catppuccin-bat,
+  config,
   ...
 }: {
   # Add stuff for your user as you see fit:
@@ -9,14 +9,12 @@
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
     thefuck
-    nerdfonts
     nodePackages_latest.nodejs
     wget
     curl
     ripgrep
     neofetch
     bitwarden
-    thunderbird
   ];
 
   programs = {
