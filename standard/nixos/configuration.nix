@@ -110,8 +110,6 @@
 
   environment.systemPackages = with pkgs.unstable; [
     vim
-    zig
-    zsh
     git
   ];
 
