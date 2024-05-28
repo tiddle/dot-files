@@ -6,10 +6,6 @@
   lib,
   ...
 }: {
-  options = {
-    largePrograms.enable = lib.mkEnableOption "enables largePrograms";
-  };
-
   home.sessionVariables = {
     EDITOR = "vim";
     BROWSER = "librewolf";
