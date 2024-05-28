@@ -9,7 +9,7 @@
     enable = true;
     profiles.default = {
       isDefault = true;
-      extensions = with inputs.firefox-addons.packages."x86_64-linx"; [
+      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
         ublock-origin
         bitwarden
         sponsorblock
