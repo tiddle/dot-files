@@ -88,7 +88,7 @@
           remap = {
             CapsLock = Ctrl_L;
           };
-        };
+        }
       ];
     };
   };
