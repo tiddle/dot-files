@@ -113,7 +113,6 @@
     zig
     zsh
     git
-    orca-slicer
   ];
 
   programs.zsh.enable = true;
