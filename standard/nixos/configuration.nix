@@ -47,6 +47,7 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ../desktop-environment/budgie.nix
     ./hardware-configuration.nix
+    inputs.xremap-flake.nixosModules.default
   ];
 
   nixpkgs = {
@@ -72,6 +73,24 @@
       # Disable if you don't want unfree packages
       allowUnfree = true;
     };
+  };
+
+  hardware.uinput.enable = true;
+  user.groups.uinput.members = ["carlo"];
+  user.groups.input.members = ["carlo"];
+
+  services.xremap = {
+    userName = "carlo";
+    config = {
+      keymap = [
+        {
+          name = "Standard";
+          remap = {
+            CapsLock = Ctrl_L
+          }
+        }
+      ]
+    }
   };
 
   nix = let
