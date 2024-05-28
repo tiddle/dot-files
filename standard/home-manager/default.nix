@@ -3,6 +3,7 @@
 {
   pkgs,
   system,
+  lib,
   ...
 }: {
   options = {
