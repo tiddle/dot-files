@@ -86,7 +86,7 @@
         {
           name = "Standard";
           remap = {
-            CapsLock = Ctrl_L;
+            CapsLock = "Ctrl_L";
           };
         }
       ];
