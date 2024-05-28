@@ -75,10 +75,6 @@
     };
   };
 
-  hardware.uinput.enable = true;
-  user.groups.uinput.members = ["carlo"];
-  user.groups.input.members = ["carlo"];
-
   services.xremap = {
     userName = "carlo";
     config = {
