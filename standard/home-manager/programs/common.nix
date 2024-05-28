@@ -14,7 +14,6 @@
     curl
     ripgrep
     neofetch
-    bitwarden
   ];
 
   programs = {
