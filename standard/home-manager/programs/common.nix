@@ -13,6 +13,7 @@
     wallch
     chromium
     mangohud
+    nodejs
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 

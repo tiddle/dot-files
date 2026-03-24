@@ -7,7 +7,6 @@
     ./kitty.nix
     ./nvim.nix
     ./zen.nix
-    ./nvm.nix
     ./gaming.nix
     ./vscodium.nix
   ];
