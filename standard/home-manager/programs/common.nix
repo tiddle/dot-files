@@ -13,7 +13,10 @@
     curl
     ripgrep
     neofetch
+    (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
+
+  fonts.fontconfig.enable = true;
 
   programs = {
     bottom.enable = true;
@@ -32,6 +35,18 @@
     };
     zsh = {
       enable = true;
+      plugins = [
+        {
+          name = "zsh-autosuggestions";
+          src = pkgs.zsh-autosuggestions;
+          file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
+        }
+        {
+          name = "zsh-syntax-highlighting";
+          src = pkgs.zsh-syntax-highlighting;
+          file = "share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh";
+        }
+      ];
       shellAliases = {
           ls = "eza";
           ll = "ls -l";

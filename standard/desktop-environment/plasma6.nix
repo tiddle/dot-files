@@ -1,11 +1,6 @@
-{
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-  };
-  outputs = inputs@{ ... }: {
-    services.xserver.enable = true;
-    services.displayManager.sddm.enable = true;
-    services.displayManager.sddm.wayland.enable = true;
-    services.desktopManager.plasma6.enable = true;
-  };
+{ config, lib, pkgs, ... }: {
+  services.xserver.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.enable = true;
 }
