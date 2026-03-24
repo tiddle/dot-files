@@ -153,6 +153,9 @@
   # Flatpak
   services.flatpak.enable = true;
 
+  # Docker
+  virtualisation.docker.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
@@ -171,7 +174,7 @@
   users.users = {
     carlo = {
       isNormalUser = true;
-      extraGroups = ["wheel" "networkmanager" "gamemode"];
+      extraGroups = ["wheel" "networkmanager" "gamemode" "docker"];
     };
   };
 
