@@ -150,6 +150,9 @@
     extraPortals = [ pkgs.xdg-desktop-portal-kde ];
   };
 
+  # Flatpak
+  services.flatpak.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;

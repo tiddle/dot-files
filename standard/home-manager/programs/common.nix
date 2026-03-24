@@ -6,6 +6,10 @@
     ripgrep
     neofetch
     lazygit
+    discord
+    vlc
+    mpv
+    kdePackages.spectacle
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
