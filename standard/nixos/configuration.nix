@@ -156,6 +156,7 @@
   services.flatpak.enable = true;
 
   # Docker
+  # After first install, log out and back in for docker group membership to take effect
   virtualisation.docker.enable = true;
 
   programs.steam = {
