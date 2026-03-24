@@ -118,7 +118,12 @@
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
+    extraCompatPackages = [ pkgs.proton-ge-bin ];
   };
+
+  programs.gamemode.enable = true;
+
+  programs.mangohud.enable = true;
 
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
@@ -130,7 +135,7 @@
   users.users = {
     carlo = {
       isNormalUser = true;
-      extraGroups = ["wheel" "networkmanager"];
+      extraGroups = ["wheel" "networkmanager" "gamemode"];
     };
   };
 
