@@ -6,6 +6,7 @@
     ./alacritty.nix
     ./nvim.nix
     ./zen.nix
+    ./nvm.nix
     #./vscodium.nix
   ];
 }
