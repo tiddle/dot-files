@@ -8,5 +8,6 @@
     ./zen.nix
     ./gaming.nix
     ./vscodium.nix
+    ./kde.nix
   ];
 }
