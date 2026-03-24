@@ -9,7 +9,6 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     BROWSER = "librewolf";
-    TERMINAL = "alacritty";
   };
 
   # You can import other home-manager modules here
