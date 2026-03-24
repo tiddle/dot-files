@@ -120,7 +120,8 @@
     remotePlay.openFirewall = true;
   };
 
-  hardware.opengl.driSupport32Bit = true;
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 
   # TODO: Set your hostname
   networking.hostName = "carlo-pc";
