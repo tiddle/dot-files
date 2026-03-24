@@ -19,6 +19,10 @@
 
   fonts.fontconfig.enable = true;
 
+  # npm global installs go to ~/.npm-global — no sudo needed
+  home.sessionVariables.NPM_CONFIG_PREFIX = "$HOME/.npm-global";
+  home.sessionPath = [ "$HOME/.npm-global/bin" ];
+
   programs = {
     bottom.enable = true;
     eza.enable = true;
