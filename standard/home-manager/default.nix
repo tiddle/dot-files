@@ -7,7 +7,7 @@
   ...
 }: {
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "nvim";
     BROWSER = "librewolf";
     TERMINAL = "alacritty";
   };
