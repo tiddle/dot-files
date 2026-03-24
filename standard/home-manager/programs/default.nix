@@ -8,6 +8,6 @@
     ./zen.nix
     ./nvm.nix
     ./gaming.nix
-    #./vscodium.nix
+    ./vscodium.nix
   ];
 }

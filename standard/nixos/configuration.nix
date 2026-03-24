@@ -46,7 +46,13 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+
+    # Desktop environment — uncomment one:
     ../desktop-environment/budgie.nix
+    # ../desktop-environment/plasma6.nix
+    # ../desktop-environment/xfce.nix
+    # ../desktop-environment/pantheon.nix
+
     ../hardware/nvidia.nix  # comment out if no NVIDIA GPU
     inputs.xremap-flake.nixosModules.default
   ];
@@ -129,10 +135,8 @@
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
 
-  # TODO: Set your hostname
   networking.hostName = "carlo-pc";
 
-  # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     carlo = {
       isNormalUser = true;

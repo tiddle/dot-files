@@ -1,18 +1,11 @@
-{
-  lib,
-  pkgs,
-  config,
-  ...
-}: {
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     thefuck
     wget
     curl
     ripgrep
     neofetch
+    lazygit
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
