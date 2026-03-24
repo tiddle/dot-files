@@ -124,9 +124,17 @@
   # NFS client
   services.rpcbind.enable = true;
 
+  # Tailscale VPN
+  services.tailscale.enable = true;
+  networking.firewall.trustedInterfaces = [ "tailscale0" ];
+
+  # OpenVPN — add connections under services.openvpn.servers.<name>.config
+  # e.g. services.openvpn.servers.work.config = ''config /etc/openvpn/work.ovpn'';
+
   environment.systemPackages = with pkgs.unstable; [
     vim
     git
+    openvpn
   ];
 
   programs.zsh.enable = true;
