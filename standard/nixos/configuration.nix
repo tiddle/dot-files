@@ -118,6 +118,9 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
+  # NFS client
+  services.rpcbind.enable = true;
+
   environment.systemPackages = with pkgs.unstable; [
     vim
     git
