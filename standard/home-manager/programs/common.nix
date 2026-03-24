@@ -10,6 +10,7 @@
     vlc
     mpv
     kdePackages.spectacle
+    wallch
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
