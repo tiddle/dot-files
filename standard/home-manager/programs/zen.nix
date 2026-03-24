@@ -8,6 +8,11 @@
   # The xpi is fetched from AMO on first launch (requires internet).
   policiesJson = pkgs.writeText "zen-policies.json" (builtins.toJSON {
     policies = {
+      Preferences = {
+        "media.ffmpeg.vaapi.enabled" = { Value = true; Status = "default"; };
+        "media.hardware-video-decoding.force-enabled" = { Value = true; Status = "default"; };
+        "gfx.webrender.all" = { Value = true; Status = "default"; };
+      };
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = {
           installation_mode = "force_installed";

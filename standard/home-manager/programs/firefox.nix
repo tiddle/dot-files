@@ -44,6 +44,8 @@
         "general.smoothScroll" = false;
         "geo.enabled" = false;
         "gfx.webrender.all" = true;
+        "media.ffmpeg.vaapi.enabled" = true;
+        "media.hardware-video-decoding.force-enabled" = true;
         "layout.css.devPixelsPerPx" = "1";
         "media.navigator.enabled" = false;
         "media.video_stats.enabled" = false;
