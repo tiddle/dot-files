@@ -10,7 +10,6 @@
     vlc
     mpv
     kdePackages.spectacle
-    wallch
     chromium
     mangohud
     nodejs
