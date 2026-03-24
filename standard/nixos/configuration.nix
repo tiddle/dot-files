@@ -151,6 +151,8 @@
   };
 
   # Flatpak
+  # After first install, add Flathub remote manually:
+  # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   services.flatpak.enable = true;
 
   # Docker
