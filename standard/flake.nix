@@ -24,7 +24,7 @@
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # AIDEV-NOTE: do not follow nixpkgs — version mismatch causes seq builtin eval error
     };
 
     nvchad-starter = {

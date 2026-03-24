@@ -184,8 +184,6 @@
 
   programs.gamemode.enable = true;
 
-  programs.mangohud.enable = true;
-
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
 

@@ -12,6 +12,7 @@
     kdePackages.spectacle
     wallch
     chromium
+    mangohud
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
