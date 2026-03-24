@@ -27,6 +27,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nvchad-starter = {
+      url = "github:NvChad/starter";
+      flake = false;
+    };
+
   };
 
   outputs = {
