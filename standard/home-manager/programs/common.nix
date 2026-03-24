@@ -11,6 +11,7 @@
     mpv
     kdePackages.spectacle
     wallch
+    chromium
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
