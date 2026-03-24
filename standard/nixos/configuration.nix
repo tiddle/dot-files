@@ -47,6 +47,7 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     ../desktop-environment/budgie.nix
+    ../hardware/nvidia.nix  # comment out if no NVIDIA GPU
     inputs.xremap-flake.nixosModules.default
   ];
 
