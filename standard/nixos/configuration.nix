@@ -9,6 +9,8 @@
   ...
 }: {
   boot.loader.grub.enable = true;
+  # CHECK BEFORE INSTALL: set to your actual disk (e.g. /dev/sda, /dev/nvme0n1)
+  # Current value "/dev/vda" is for VMs only
   boot.loader.grub.device = "/dev/vda";
 
   # Enable networking
@@ -53,7 +55,8 @@
     # ../desktop-environment/xfce.nix
     # ../desktop-environment/pantheon.nix
 
-    ../hardware/nvidia.nix  # comment out if no NVIDIA GPU
+    # CHECK BEFORE INSTALL: comment this out in VMs or non-NVIDIA systems
+    ../hardware/nvidia.nix
     inputs.xremap-flake.nixosModules.default
   ];
 
