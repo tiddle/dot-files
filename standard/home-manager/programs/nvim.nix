@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: {
   programs.neovim = {
     enable = true;
-    package = pkgs.unstable.neovim; # 0.11+ from unstable
+    package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.neovim; # 0.11+ from unstable
     defaultEditor = true;
     vimAlias = true;
     viAlias = true;
