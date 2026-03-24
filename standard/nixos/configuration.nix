@@ -115,6 +115,13 @@
 
   programs.zsh.enable = true;
 
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+  };
+
+  hardware.opengl.driSupport32Bit = true;
+
   # TODO: Set your hostname
   networking.hostName = "carlo-pc";
 
