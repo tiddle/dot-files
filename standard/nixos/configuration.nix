@@ -48,8 +48,8 @@
     ./hardware-configuration.nix
 
     # Desktop environment — uncomment one:
-    ../desktop-environment/budgie.nix
-    # ../desktop-environment/plasma6.nix
+    # ../desktop-environment/budgie.nix
+    ../desktop-environment/plasma6.nix
     # ../desktop-environment/xfce.nix
     # ../desktop-environment/pantheon.nix
 
