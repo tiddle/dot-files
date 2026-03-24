@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
-  home.packages = [ pkgs.nvm ];
-
-  # AIDEV-NOTE: nvm needs to be sourced at shell init; NVM_DIR defaults to ~/.nvm
+{ ... }: {
+  # AIDEV-NOTE: nvm is not in nixpkgs; install once manually via:
+  # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+  # This config just wires the shell integration so it's available after install.
   programs.zsh.initExtra = ''
     export NVM_DIR="$HOME/.nvm"
-    [ -s "${pkgs.nvm}/nvm.sh" ] && source "${pkgs.nvm}/nvm.sh"
-    [ -s "${pkgs.nvm}/bash_completion" ] && source "${pkgs.nvm}/bash_completion"
+    [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
   '';
 }
