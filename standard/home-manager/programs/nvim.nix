@@ -1,7 +1,8 @@
 { pkgs, inputs, ... }: {
   programs.neovim = {
     enable = true;
-    package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.neovim; # 0.11+ from unstable
+    # AIDEV-NOTE: home-manager wraps neovim-unwrapped internally; passing neovim causes lua attr error
+    package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.neovim-unwrapped; # 0.11+
     defaultEditor = true;
     vimAlias = true;
     viAlias = true;
